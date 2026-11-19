@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: #111; background: #fff; }
+.container { max-width: 960px; margin: 0 auto; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: center; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { text-align: left; padding: 12px 8px; font-size: 13px; border-bottom: 1px solid #eee; }
+th:last-child, td:last-child { text-align: center; }
+.empty { text-align: center; color: #888; }
+
+.btn { border: none; border-radius: 4px; color: #fff; padding: 8px 14px; cursor: pointer; text-decoration: none; font-size: 13px; display: inline-block; text-align: center; }
+.btn.blue { background: #4361ee; }
+.btn.red { background: #c62828; }
+.btn.icon { padding: 5px 8px; }
+
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: flex; justify-content: center; align-items: center; }
+.modal { background: #fff; padding: 20px; border-radius: 6px; width: 360px; max-width: 92vw; }
+.modal h3 { text-align: center; margin: 0 0 10px; }
+.modal label { display: block; font-weight: 700; font-size: 13px; margin: 10px 0 4px; }
+.modal input, .modal select, .modal textarea { width: 100%; padding: 6px; border: 1px solid #c7d0ff; border-radius: 4px; }
+.row { display: flex; gap: 12px; }
+.row > div { flex: 1; }
+.actions { margin-top: 16px; }
+.actions .btn { flex: 1; }
+
+.detail-wrap { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 16px; }
+.card { border: 1px solid #eee; border-radius: 8px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.detail { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; width: 640px; max-width: 100%; }
+.detail h4 { margin: 10px 0 2px; }
+.detail p { margin: 0; font-size: 13px; }
+.desc { border: 1px solid #ddd; border-radius: 4px; padding: 8px; min-height: 80px; font-size: 13px; }
+
+.toast { position: fixed; top: 16px; right: 16px; background: #2e7d32; color: #fff; padding: 10px 16px; border-radius: 4px; z-index: 10; }
